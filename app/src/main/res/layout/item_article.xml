@@ -4,7 +4,7 @@
     <data>
         <variable
             name="m"
-            type="com.benyq.programmreviewlab.ArticleModel" />
+            type="com.benyq.programmreviewlab.model.ArticleModel" />
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -17,7 +17,7 @@
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:imageUrl="@{m.imagePath}"/>
+            imageUrl="@{m.imagePath}"/>
 
         <LinearLayout
             android:layout_weight="3"
