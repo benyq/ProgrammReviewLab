@@ -1,7 +1,10 @@
+import com.benyq.versionplugin.Libs
+
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'com.benyq.versionplugin'
 }
 
 android {
@@ -9,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId "com.benyq.programmreviewlab"
-        minSdk 21
+        minSdk 22
         targetSdk 30
         versionCode 1
         versionName "1.0"
@@ -37,19 +40,21 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
-    implementation 'androidx.core:core-ktx:1.6.0'
-    implementation 'androidx.appcompat:appcompat:1.3.0'
-    implementation 'com.google.android.material:material:1.3.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation 'androidx.fragment:fragment:1.3.4'
+
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 
+    implementation Libs.core_ktx
+    implementation Libs.appcompat
+    implementation Libs.material
+    implementation Libs.constraintLayout
+    implementation Libs.fragment
+
     //第三方库
     // https://github.com/liangjingkanji/BRV
-    implementation 'com.github.liangjingkanji:BRV:1.3.33'
-    implementation 'com.google.code.gson:gson:2.8.8'
-    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation Libs.BRV
+    implementation Libs.gson
+    implementation Libs.glide
 }

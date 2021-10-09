@@ -1,0 +1,38 @@
+
+//来源
+//https://github.com/hi-dhl/ComposingBuilds-vs-buildSrc
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        // 由于使用的 Kotlin 须要须要添加 Kotlin 插件
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+    }
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'java-gradle-plugin'
+
+repositories {
+    // 须要添加 jcenter 不然会提示找不到 gradlePlugin
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    implementation gradleApi()
+    implementation "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+}
+
+gradlePlugin {
+    plugins {
+        version {
+            // 在 app 模块须要经过 id 引用这个插件
+            id = 'com.benyq.versionplugin'
+            // 实现这个插件的类的路径
+            implementationClass = 'com.benyq.versionplugin.VersionPlugin'
+        }
+    }
+}
