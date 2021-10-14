@@ -1,4 +1,4 @@
-package com.benyq.programmreviewlab.model
+package com.benyq.programmreviewlab.databinding.model
 
 import androidx.databinding.BaseObservable
 

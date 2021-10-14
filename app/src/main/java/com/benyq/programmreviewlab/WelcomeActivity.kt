@@ -1,15 +1,13 @@
-package com.benyq.programmreviewlab.activity
+package com.benyq.programmreviewlab
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
-import com.benyq.programmreviewlab.R
-import com.benyq.programmreviewlab.model.EntranceData
-import com.drake.brv.BindingAdapter
-import com.drake.brv.annotaion.DividerOrientation
-import com.drake.brv.utils.divider
+import com.benyq.programmreviewlab.handler.HandlerActivity
+import com.benyq.programmreviewlab.sohotfix.HotFixSoActivity
+import com.benyq.programmreviewlab.databinding.DataBindingActivity
+import com.benyq.programmreviewlab.databinding.model.EntranceData
 import com.drake.brv.utils.grid
 import com.drake.brv.utils.setup
 
@@ -41,7 +39,7 @@ class WelcomeActivity : AppCompatActivity() {
     private fun getData() = listOf(
         EntranceData("DataBinding", DataBindingActivity::class.java),
         EntranceData("Handler内存屏障", HandlerActivity::class.java),
-        EntranceData("Handler", HandlerActivity::class.java),
+        EntranceData("修改so加载地址", HotFixSoActivity::class.java),
         EntranceData("Handler", HandlerActivity::class.java),
         EntranceData("Handler", HandlerActivity::class.java),
     )

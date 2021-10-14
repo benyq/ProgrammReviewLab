@@ -1,4 +1,4 @@
-package com.benyq.programmreviewlab.activity
+package com.benyq.programmreviewlab.handler
 
 import android.os.*
 import android.util.Log

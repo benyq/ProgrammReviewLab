@@ -1,4 +1,4 @@
-package com.benyq.programmreviewlab.vm
+package com.benyq.programmreviewlab.databinding
 
 import android.app.Application
 import android.widget.Toast

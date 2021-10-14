@@ -1,4 +1,4 @@
-package com.benyq.programmreviewlab.util
+package com.benyq.programmreviewlab.databinding
 
 import android.view.View
 import java.util.concurrent.TimeUnit

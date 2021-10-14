@@ -1,4 +1,4 @@
-package com.benyq.programmreviewlab.activity
+package com.benyq.programmreviewlab.databinding
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.benyq.programmreviewlab.R
 import com.benyq.programmreviewlab.databinding.ActivityLoginBinding
-import com.benyq.programmreviewlab.vm.LoginViewModel
 
 class LoginActivity : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.benyq.programmreviewlab.fragment
+package com.benyq.programmreviewlab.databinding
 
 import android.os.Bundle
 import android.os.Handler
@@ -10,8 +10,7 @@ import androidx.core.os.postDelayed
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.benyq.programmreviewlab.R
-import com.benyq.programmreviewlab.databinding.FragmentArticleBinding
-import com.benyq.programmreviewlab.model.ArticleModel
+import com.benyq.programmreviewlab.databinding.model.ArticleModel
 import com.drake.brv.annotaion.DividerOrientation
 import com.drake.brv.utils.divider
 import com.drake.brv.utils.linear

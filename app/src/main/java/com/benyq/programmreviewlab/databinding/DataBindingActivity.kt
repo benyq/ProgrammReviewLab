@@ -1,16 +1,11 @@
-package com.benyq.programmreviewlab.activity
+package com.benyq.programmreviewlab.databinding
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import androidx.core.os.postDelayed
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ObservableField
 import com.benyq.programmreviewlab.R
-import com.benyq.programmreviewlab.databinding.ActivityDataBindingBinding
-import com.benyq.programmreviewlab.fragment.ArticleFragment
 
 class DataBindingActivity : AppCompatActivity() {
 
